@@ -1,4 +1,4 @@
-Curl-kommandoer for å hente ut a
+Curl-kommandoer for å hente ut informasjon fra AirTable-tabellene. Forutsetter gyldig token
 
 Metodeverk for deling:
 
@@ -7,6 +7,15 @@ https://airtable.com/appzJQ8Tkmm8DobrJ/shrSiMBbhREpMRyV0/tblLZbUqA0XnUgC2v
 
 curl "https://api.airtable.com/v0/appzJQ8Tkmm8DobrJ/tblLZbUqA0XnUgC2v" \
 -H "Authorization: Bearer $TOKEN"
+
+Hente ut informasjon fra ulike records:
+
+curl "https://api.airtable.com/v0/appzJQ8Tkmm8DobrJ/tblLZbUqA0XnUgC2v/recoLfk5vlyM96vd6" \
+-H "Authorization: Bearer $TOKEN"
+
+curl "https://api.airtable.com/v0/appzJQ8Tkmm8DobrJ/tblLZbUqA0XnUgC2v/recdOhcX8zVd1sfZy" \
+-H "Authorization: Bearer $TOKEN"
+
 
 Alle (har ikke rettigheter p.t.):
 
